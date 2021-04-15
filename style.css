@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   
+    width: 100%;
+    height: 100%;
+}
+.forFont ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+.overlay {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.overlayContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 480px;
+    background: #101010;
+}
+.overlayContent {
+    height: 90vh;
+    min-height: 480px;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #888888;
+}
+.overlayContent img {
+    width: 70%;
+    margin-bottom: 20px;
+    transition: .3s ease;
+    user-select: none;
+    cursor: pointer;
+}
+.overlayContent h1 {
+    font-size: 40px;
+    font-weight: 300;
+    user-select: none;
+}
+
+.overlayContent img:hover {
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #929292;
+}
+::-webkit-scrollbar-thumb {
+    background: #000;
+    box-shadow: 0 -100vh 0 100vh #000;
+}
+
+
+
+/*Home*/
+
+.topBanner {
+    display: flex;
+    background: url(image/Cover_Backdrop.jpg);
+    height: 115vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    justify-content: flex-start;
+    align-items: center;
+}
+.topBannerImg {
+    width: 90%;
+    height: 105vh;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+}
+.topBannerImg img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.topBannerLinks {
+    width: 6%;
+}
+.topBannerLinks ul li {
+    list-style: none;
+    transform: rotate(270deg);
+    padding: 10px;
+    margin: 53px 10px;
+}
+.topBannerLinks ul li a {
+    text-decoration: none;
+    color: #101010;
+    padding: 10px;
+}
+.topBannerLinks ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#home p {
+    text-align: center;
+    padding: 40px 45px;
+    font-size: 18.5px;
+    line-height: 24px;
+}
+.stockedOnFishing {
+    width: 94%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+.stockedOnFishing img {
+    width: 100%;
+    height: 100%;
+}
+.fishLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fishLine .fishImg {
+    width: 30.3%;
+    margin: 45px 10px 0px 10px;
+}
+.fishLine .fishImg img {
+    width: 100%;
+    height: 100%;
+}
+.cavalla {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+    width: 94%;
+}
+.cavalla img {
+    width: 100%;
+    height: 100%;
+}
+.stokedFishingOfficial {
+    width: 94%;
+    margin: auto;
+}
+.stokedFishingOfficial img {
+    width: 100%;
+}
+.footerLinks ul li a {
+    text-decoration: none;
+    color: #101010;
+    font-size: 23px;
+}
+.footerLinks ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+}
+.footerLinks ul li {
+    list-style: none;
+}
+
+/*Monterey Tour*/
+
+.tourTopBanner {
+    display: flex;
+    background: url(image/Cover_Backdrop.jpg);
+    height: 115vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topTourImg {
+    width: 90%;
+    height: 105vh;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+}
+.topTourImg img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.topTourLinks {
+    width: 6%;
+}
+.topTourLinks ul li {
+    list-style: none;
+    transform: rotate(270deg);
+    padding: 10px;
+    margin: 53px 10px;
+}
+.topTourLinks ul li a {
+    text-decoration: none;
+    color: #101010;
+    padding: 10px;
+}
+.topTourLinks ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.tourSign {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 30px;
+}
+.tourLogo {
+    width: 450px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tourLogo img {
+    width: 80%;
+    height: 79%;
+    border-radius: 6px;
+}
+.tourSignText {
+    width: 510px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.tourSignText p {
+    text-align: center;
+    font-size: 25px;
+}
+.ridingGirl {
+    margin: 0 37px 25px 37px;
+}
+.ridingGirl img {
+    width: 100%;
+}
+
+/*Paladar*/
+
+.paladarTopBanner {
+    display: flex;
+    background: url(image/Cover_Backdrop.jpg);
+    height: 115vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    justify-content: flex-start;
+    align-items: center;
+}
+.topPaladarLinks {
+    width: 6%;
+}
+.topPaladarLinks ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.topPaladarLinks ul li {
+    list-style: none;
+    transform: rotate(270deg);
+    padding: 10px;
+    margin: 53px 10px;
+}
+.topPaladarLinks ul li a {
+    text-decoration: none;
+    color: #101010;
+    padding: 10px;
+}
+
+.topPaladarImg {
+    width: 90%;
+    height: 105vh;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+}
+.topPaladarImg img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.paladarSays {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 30px;
+}
+.paladarLogo {
+    width: 450px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paladarLogo img {
+    width: 80%;
+    height: 79%;
+    border-radius: 6px;
+}
+.paladarInfo {
+    width: 510px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.paladarInfo p {
+    text-align: inherit;
+    font-size: 25px;
+}
+.paladarFullWidthBanner {
+    width: 100%
+}
+.paladarFullWidthBanner img {
+    width: 100%;
+}
+
+/* Monkey */
+
+.monkeyTopBanner {
+    display: flex;
+    background: url(image/Cover_Backdrop.jpg);
+    height: 115vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    justify-content: flex-start;
+    align-items: center;
+}
+.topMonkeyLinks {
+    width: 6%;
+}
+.topMonkeyLinks ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.topMonkeyLinks ul li {
+    list-style: none;
+    transform: rotate(270deg);
+    padding: 10px;
+    margin: 53px 10px;
+}
+.topMonkeyLinks ul li a {
+    text-decoration: none;
+    color: #101010;
+    padding: 10px;
+}
+.topMonkeyImg {
+    width: 90%;
+    height: 105vh;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+}
+.topMonkeyImg img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.monkeySays {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 30px;
+}
+.monkeyLogo {
+    width: 450px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.monkeyLogo img {
+    width: 80%;
+    height: 79%;
+    border-radius: 6px;
+}
+.monkeyInfo {
+    width: 510px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.monkeyInfo p {
+    text-align: center;
+    font-size: 25px;
+}
+.monkeyFullWidthBanner {
+    width: 100%
+}
+.monkeyFullWidthBanner img {
+    width: 100%;
+}
+
+/*Modeling*/
+
+.modelTopBanner {
+    display: flex;
+    background: url(image/Cover_Backdrop.jpg);
+    height: 115vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    justify-content: flex-start;
+    align-items: center;
+}
+.topModelLinks {
+    width: 6%;
+}
+.topModelLinks ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.topModelLinks ul li {
+    list-style: none;
+    transform: rotate(270deg);
+    padding: 10px;
+    margin: 53px 10px;
+}
+.topModelLinks ul li a {
+    text-decoration: none;
+    color: #101010;
+    padding: 10px;
+}
+.topModelImg {
+    width: 90%;
+    height: 105vh;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+}
+.topModelImg img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.modelTopPara {
+    margin: 60px 80px;
+}
+.modelTopPara p {
+    font-size: 24px;
+    text-align: center;
+}
+.jellyfishImg{
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+    width: 94%;
+}
+.jellyfishImg img {
+    width: 100%;
+    height: 100%;
+}
+.oneContainer {
+    margin: 20px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.oneImg {
+    width: 47%;
+}
+.oneImg img {
+    width: 100%;
+}
+.oneInfo {
+    width: 47%;
+    font-size: 25px;
+}
+
+/* About */
+
+.aboutTopBanner {
+    display: flex;
+    background: url(image/Cover_Backdrop.jpg);
+    height: 115vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    justify-content: flex-start;
+    align-items: center;
+}
+.topAboutLinks {
+    width: 6%;
+}
+.topAboutLinks ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.topAboutLinks ul li {
+    list-style: none;
+    transform: rotate(270deg);
+    padding: 10px;
+    margin: 53px 10px;
+}
+.topAboutLinks ul li a {
+    text-decoration: none;
+    color: #101010;
+    padding: 10px;
+}
+.topAboutImg {
+    width: 90%;
+    height: 105vh;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+}
+.topAboutImg img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.chrisInfo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.chrisInfo h1 {
+    position: absolute;
+    top: 7%;
+    font-size: 35px;
+    font-weight: 300;
+}
+.chrisInfoWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.chrisImg {
+    width: 330px;
+    height: 390px;
+}
+.chrisImg img {
+    width: 100%;
+    height: 100%;
+    position: unset;
+}
+.chrisInfoWrapper p {
+    width: 48%;
+    font-size: 55px;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.chrisText p {
+    font-size: 32px;
+    margin: 80px 147px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 40px;
+}
+
+
+/* Contact */
+
+.contact {
+    width: 100%;
+    height: 110vh;
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactWrapper {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    position: relative;
+}
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo h1 {
+    text-align: center;
+    font-size: 90px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+.contactInfo span {
+    font-size: 33px;
+    line-height: 57px;
+}
+.homeLink ul li {
+    list-style: none;
+}
+
+.homeLink ul li a {
+    text-decoration: none;
+    color: #101010;
+    font-size: 35px;
+}
+
+.homeLink {
+    position: absolute;
+    left: 2%;
+    top: 4%;
+}
