@@ -11,10 +11,7 @@ function fadeOut() {
         top: '-210%',
         ease: Expo.easeInOut
     })
-
-    // let allContent = document.getElementsByClassName('allContent')[0];
-    // allContent.classList.toggle('active');
-}
+};
 
 
 
